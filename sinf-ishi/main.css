@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.btn-primary{
+   overflow: hidden;
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   font-size: 18px;
+   font-family: sans-serif;
+   padding: 8px 13px;
+   border-radius: 2  px;
+   border:1px solid black;
+   color:black;
+   margin: 20px;
+   transition: all 1s ease;
+}
+.btn-primary:hover{
+   color:white;
+}
+.btn-primary:hover::before{
+   transform: translate(-20px,-20px);
+}
+.btn-primary::before{
+   position: absolute;
+   content: '';
+   width: 150px;
+   top: -10;
+   left: -10;
+   height: 150px;
+   background-color:black;
+   border-bottom-right-radius: 70%;
+   transform:translate(-150px,-110px) ;
+   z-index: -1;
+   transition: all 1s ease;
+
+}
+/* .container{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.parent{
+   display: flex;
+   gap: 30px;
+}
+.child{
+   max-width: 200px;
+   min-height: 100px;
+   background-color:red; 
+} */
+
+/* .checkbox__label{
+   margin: 20px;
+   display: flex;
+   align-items: center;
+   gap: 3px;
+}
+.checkbox__label input{
+    visibility: hidden; 
+   appearance: none;
+}
+.checkbox__label span{
+      width: 13px;
+      height: 13px;
+      border-radius: 2px;
+      border: 2px solid black;
+}
+.checkbox__label input:checked+span{
+   background-color:#FFC29F;
+   background-image:url(./images/icon.svg);
+   background-repeat: no-repeat;
+   background-size: contain; 
+   background-position: center;
+}
+.checkbox__label input:checked+span:hover{
+   background-color:#ff965b;
+}
+.checkbox__label input:checked+span:active{
+   box-shadow: 2px 2px black;
+}
+.checkbox__label input+span{
+   transition: all 0.3s ease;
+}
+.checkbox__label input:disabled+span{
+   background-color:#d5d5d5;
+   border-radius: 2px;
+   border:2px solid #727272;
+}
+.checkbox__label input:checked:disabled+span{
+   background-image:url(./images/icon.svg);
+   background-size:contain;
+   background-repeat:no-repeat;
+   opacity: 0.6;   
+} */
+
+/* .btn:active{
+   background-color: red;
+} */
